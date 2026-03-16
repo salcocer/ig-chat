@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "OnlyChat",
+  "version": "1.0.0",
+  "description": "A Chrome extension that provides a chat interface for users to interact with social chats like Instagram, Facebook or Whatsapp.",
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "background": {
+    "type": "module",
+    "service_worker": "worker.js"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
