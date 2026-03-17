@@ -3,8 +3,7 @@ import "./global.css";
 
 function App() {
   return (
-    <div className="bg-color w-90 h-150 p-4 bg-gray-color">
-      <button className="text-color">Switch to "light" : "dark"</button>
+    <div className="bg-color w-84 h-140 p-4 rounded-2xl">
       <ModeToggle />
     </div>
   );
