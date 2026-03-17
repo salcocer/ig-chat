@@ -1,14 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import "./phone.css";
+import { ThemeProvider } from "./components/theme-provider.tsx";
 import App from "./App.tsx";
+import "./global.css";
 
 const rootElem = document.getElementById("root")!;
-rootElem.classList.add("phone-viewport");
 
 createRoot(rootElem).render(
   <StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </StrictMode>,
 );

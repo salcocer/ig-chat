@@ -1,7 +1,11 @@
 import "./global.css";
 
 function App() {
-  return <div className="bg-amber-100 w-[100px]">hello world! extension</div>;
+  return (
+    <div className="bg-color w-90 h-150 p-4 bg-gray-color">
+      <button className="text-color">Switch to "light" : "dark"</button>
+    </div>
+  );
 }
 
 export default App;
